@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国中山公园和中山路分布图</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ 中国中山公园和中山路分布图</h1>
+            <p>探索全国各地的中山公园和中山路，传承孙中山先生的精神</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="number" id="parkCount">0</div>
+                <div class="label">中山公园</div>
+            </div>
+            <div class="stat-item">
+                <div class="number" id="roadCount">0</div>
+                <div class="label">中山路</div>
+            </div>
+            <div class="stat-item">
+                <div class="number" id="totalCount">0</div>
+                <div class="label">总计</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <h2>📍 地点列表</h2>
+                
+                <div class="filter-section">
+                    <h3>筛选类型</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-type="all">全部</button>
+                        <button class="filter-btn" data-type="park">中山公园</button>
+                        <button class="filter-btn" data-type="road">中山路</button>
+                    </div>
+                </div>
+
+                <div class="location-list" id="locationList">
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <footer class="footer">
+        <div class="copyright">
+            <p>公司：云启科技有限公司</p>
+            <p>开发者：0110李雪峰</p>
+            <p>用途：用于中国近代史纲要课程四级项目</p>
+            
+        </div>
+    </footer>
+</body>
+</html>
